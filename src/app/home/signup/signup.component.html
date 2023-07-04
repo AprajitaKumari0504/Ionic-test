@@ -1,0 +1,24 @@
+<ion-card>
+  <ion-card-content text-center color="primary">
+    <ion-header  >
+      <ion-toolbar> 
+        <ion-title>
+          Sign Up Page
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+  </ion-card-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>User Name</ion-label>
+      <ion-input [(ngModel)]="name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+    <ion-button  style="display: flex; justify-content: center;" shape="round" (tap)="onSignup()">Sign Up</ion-button>
+    <ion-button  style="display: flex; justify-content: center;" color="tertiary" shape="round" [routerLink]="['/login']">Sign In</ion-button>
+  </ion-list>
+  
+</ion-card>
